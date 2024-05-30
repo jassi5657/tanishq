@@ -20,8 +20,11 @@ useEffect(()=>{
               products.map((products,i)=>(
                 <div className="cards">
                     <img src={products.url} alt="" />
-                    <h1 className='head'> {products.name}</h1>
-                    <p className='price'>{products.price}</p>
+                    {/* <h1 className='head'> {products.name}</h1> */}
+                    <h1 className='head'> {products.category}</h1>
+
+                    
+                    {/* <p className='price'>{products.price}</p> */}
                     <a href="">Check Delivery Date <span><TbMathGreater/></span></a>
               </div>
                 ))

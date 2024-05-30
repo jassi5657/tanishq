@@ -12,7 +12,7 @@ const JewelleryGuide = () => {
             <img src={banner} alt="" />
             <Button1>
             <button>Arrange a Callback</button>
-            <button style={{marginLeft:"300px"}}>Explore Now</button>
+            <button style={{marginLeft:"338px"}}>Explore Now</button>
         </Button1>
         </Banner>
 
@@ -71,10 +71,10 @@ img{
 const Button1 = styled.div`
 button{
     position: absolute;
-    margin-top: -85px;
-    margin-left: 103px;
-    width: 182px;
-    height: 50px;
+    margin-top: -93px;
+    margin-left: 115px;
+    width: 202px;
+    height: 55px;
     border-radius: 5px;
     border: none;
     border: 1px solid rgb(131,39,41);

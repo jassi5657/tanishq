@@ -16,7 +16,6 @@ async function postProduct(req , res){
 
 
 
-
 async function deleteProduct(req , res){
     const { id } = req.params
     const data = await Product.deleteOne({ _id : id })
@@ -25,9 +24,40 @@ async function deleteProduct(req , res){
 
 
 
+async function singleProduct(req,res){
+    const { id } = req.params;
+    try {
+        const product = await Product.findById({ _id : id });
+        if (!product) {
+            return res.status(404).json({ message: 'Product not found' });
+        }
+        res.json(product);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+}
+
+
+async function getCategory(req,res){
+    const { category } = req.params;
+    try {
+        const product = await Product.findOne({ category });
+        if (!product) {
+            return res.status(404).json({ message: 'Product not found' });
+        }
+        res.json(product);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+}
+
+
+
 
 module.exports = {
     getProducts,
     postProduct,
-    deleteProduct
+    deleteProduct,
+    singleProduct,
+    getCategory
 }

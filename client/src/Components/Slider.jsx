@@ -4,20 +4,19 @@ import "react-multi-carousel/lib/styles.css";
 import "./css/slider.css"
 import { earringData } from './Data/data';
 import axios from "axios"
+import { Link } from 'react-router-dom';
 
-// import { Divider } from '@mui/material';
-// import { NavLink } from "react-router-dom"
-// import { products } from './ProductData';
+
 
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 4
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 4
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -36,11 +35,14 @@ const Slider = ({ title }) => {
   const [products,setProducts] = useState([])
   
   
-  useEffect(()=>{
-      axios.get('http://localhost:4000/product')
-      .then(products => setProducts(products.data))
-      .catch(err => console.log(err) )
-  },[])
+  useEffect(() => {
+    axios.get('http://localhost:4000/product')
+     .then(products => {
+        const earringProducts = products.data.filter(product => product.category.toLowerCase() === 'earrings');
+        setProducts(earringProducts);
+      })
+     .catch(err => console.log(err));
+  }, []);
   
 
   return (
@@ -57,9 +59,9 @@ const Slider = ({ title }) => {
         infinite={true}
         draggable={false}
         swipeable={true}
-        showDots={false}
-        centerMode={true}
-        // autoPlay={true}
+        showDots={true}
+        // centerMode={true
+        initialSlide={0}
         autoPlaySpeed={4000}
         keyBoardControl={true}
         removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -70,7 +72,7 @@ const Slider = ({ title }) => {
           products.map((e) => {
             return (
 
-
+              <Link to={`/product/${e._id}`} key={e._id}>
                 <div className="products_items">
                   <div className="product_img">
                     <img src={e.url} alt="productItem" />
@@ -78,10 +80,14 @@ const Slider = ({ title }) => {
 
                   
 
-                  <h5 className='products_name'>{e.name}</h5>
-                  <p className='products_price' style={{marginTop:"-10px"}}>{e.offerPrice}</p>
+                  <h5 className='products_name' style={{width:"230px",
+                    marginLeft:"-2px"
+
+                  }}>{e.name}</h5>
+                  <p className='products_price' style={{marginTop:"-10px", marginLeft:"-160px"}}>{e.offerPrice}</p>
 
                 </div>
+                </Link>
             )
           })
         }

@@ -4,6 +4,7 @@ import { earringData } from './Data/data';
 import { TbMathGreater } from 'react-icons/tb';
 import axios from "axios"
 import { NavLink } from 'react-router-dom';
+import { categoryProduct } from './Data/categoryProduct';
 const Cat = () => {
 const [products,setProducts] = useState([])
 
@@ -20,12 +21,12 @@ useEffect(()=>{
 
             <div className="card">
                 {
-                    products.slice(0,12).map((products, i) => (
+                    categoryProduct.map((products, i) => (
                         
                         
                         <div className="cards">
 
-                            <img src={products.url} alt="" />
+                            <img src={products.img} alt="" />
 
                             <h1>{products.title}</h1>
 
@@ -45,31 +46,37 @@ useEffect(()=>{
 
 
 const Container = styled.div`
-margin-top: 50px;
-
+width: 90%;
+margin-top: 30px;
+margin-left: 70px;
+    /* margin-top: -20px; */
 
 .cards{
     display: inline-flex;
     border: 1px solid lightgray;
     width: 178px;
-    margin: 9px;
-height: 250px;
+    
+    
+    margin: 15px;
+height: 280px;
 
 
 
 
     h1{
-        
-margin-top: 170px ;
-margin-left: -146px;
+        position: absolute;
+        height: 10px;
+        width: 400px;
+margin-top: 190px;
+margin-left: -116px;
 font-size: 17px;
         font-weight: 500;
 color: rgb(131,39,69);
     }
 
     a{
-        margin-top: 200px ;
-/* margin-left: -55px; */
+        margin-top: 225px ;
+        margin-left: -130px;
 font-size: 14px;
         text-decoration: none;
         color: black;
@@ -85,7 +92,7 @@ font-size: 14px;
 
     .greater{
       font-size: 13px;
-      margin-top: 189px;
+      margin-top: 215px;
       margin-left: 10px;
       position: absolute;
       font-weight: lighter;
@@ -108,7 +115,7 @@ img{
     margin-top: -1px;
     margin-left: 1px;
     width: 176px;
-    height: 160px;
+    height: 176px;
 
 }
 

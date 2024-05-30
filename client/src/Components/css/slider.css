@@ -1,14 +1,35 @@
 .react-multi-carousel-list{
-    width: 88%;
-    height: 400px;
+    width: 87%;
+    /* background-color: red; */
+    height: 500px;
+    
     margin-left: 75px;
 }
 
 
+.react-multi-carousel-dot button {
+    height: 15px;
+    width: 15px;
+    /* color: rgb(131,39,41);    */
+    background-color: rgb(199,199,199);
+    
+    margin: 10px;
+    margin-top: 50px ;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: rgb(131,39,41); /* active dot color */
+}
+
+
+
+
+
 .react-multiple-carousel__arrow{
-    /* margin-right:-40px ; */
-    /* margin-left: -50px; */
-    position: absolute;
+    margin-right:-50px ;
+    margin-left: -50px;
+    margin-top: -50px;
+    /* position: absolute; */
 }
 
  .react-multi-carousel-track {
@@ -100,7 +121,10 @@
     border: 1px solid lightgray;
     width: 250px;
     height: 345px;
-    margin-left: 23px;
+    margin: 24px;
+    
+    margin-left: 30px;
+    margin-top: -40px !important;
 }
 
 .products_section .products_items img{
@@ -135,6 +159,7 @@
     margin-left: -174px;
 
 }
+
 
 
 

@@ -17,8 +17,8 @@ const Carousel = () => {
     <div className="container">
         
     <AliceCarousel mouseTracking items={items} 
-    animationDuration={2000}
-    animationEasingFunction='ease-in'
+    animationDuration={4000}
+    animationEasingFunction="ease-in"
     renderNextButton={true}
     
     autoPlay

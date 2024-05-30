@@ -13,25 +13,38 @@ import NewSlider from './Components/NewSlider';
 import Cart from './Components/Cart';
 import Dashboard from './Components/admin/Dashboard';
 import AddProducts from './Components/admin/AddProducts';
+import Login from './Components/Auth/Login';
+import Register from './Components/Auth/Register';
+import { useState } from 'react';
+import AdminProducs from './Components/admin/AdminProducs';
 
 
 function App() {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="App">
        
       <Router>
+      {isLoggedIn? <Navbar /> : null}
       <Header/>
       <Navbar/>
         <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/cat' element={<Cat/>}></Route>
         <Route path='/all' element={<AllProducts/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/signup' element={<Register/>}></Route>
+
+
           <Route path='/card' element={<Card/>}></Route>
-        <Route path='product' element={<Product/>}></Route>
+        <Route path='product/:id' element={<Product/>}></Route>
         {/* <Route path='/slider' element={<NewSlider/>}></Route> */}
         <Route path='/cart' element={<Cart/>}></Route>
         <Route path='/admin' element={<Dashboard/>}></Route>
         <Route path='/admin/addProducts' element={<AddProducts/>}></Route>
+        <Route path='/admin/products' element={<AdminProducs/>}></Route>
+
 
 
 

@@ -326,158 +326,177 @@
         "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw0c0d3ae6/images/hi-res/511887PABAAA00_3.jpg?sw=115&sh=115"
     },
 
+    // bangels
+
     {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
+        "title":"Bangle",
+        "name":"Leafy Radiance Diamond Bangle",
+        "desc":"Sleek with the radiance of leaves, this bangle is crafted in 18 karat yellow gold, studded with diamonds. Stone Clarity: SI2",
+        "offerPrice": "₹ 67,916",
+        "discountPrice":"₹ 71,462",
+        "category":"Bangle",
+        "url":"https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwc21fcbf0/images/hi-res/50D3B3VOC1A02_1.jpg",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwc21fcbf0/images/hi-res/50D3B3VOC1A02_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwc21fcbf0/images/hi-res/50D3B3VOC1A02_1.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw0349e5bc/images/hi-res/50D3B3VOC1A02_3.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Bangle",
+        "name":"Timeless Chic Bangle",
+        "desc":"Mesmerise everyone with the sleek elegance of this chic bangle, crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+        "offerPrice": "₹ 72,173 ",
+        "discountPrice":"₹ 84,910",
+        "category":"Bangle",
+        "url":"https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw5b182d5b/images/hi-res/50D3B2VPT1A02_1.jpg",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw5b182d5b/images/hi-res/50D3B2VPT1A02_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwa9ff67e2/images/hi-res/50D3B2VPT1A02_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwfb2ee4f9/images/hi-res/50D3B2VPT1A02_3.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Bangle",
+        "name":"Fleur Charm Diamond Bangle",
+        "desc":"Add the beauty of fresh blooms to your daily styles with this lovely bangle crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+        "offerPrice": "₹ 1,51,973",
         "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
+        "category":"Bangle",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb130d361/images/hi-res/504045VCR1A02.jpg?sw=633&sh=633",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb130d361/images/hi-res/504045VCR1A02.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2528c7e1/images/hi-res/504045VCR1A02_1.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4423a8a6/images/hi-res/504045VCR1A02_2.jpg?sw=115&sh=115"
+    },
+
+    
+
+    {
+        "title":"Bangle",
+        "name":"Shimmering Lines Diamond Bangle",
+        "desc":"Enhance your work styles with the shimmering line pattern of this bangle crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+        "offerPrice": "₹ 1,35,529",
+        "discountPrice":"₹ 1,59,446",
+        "category":"Bangle",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw841225a6/images/hi-res/50D2BIVSV1A02.jpg?sw=633&sh=633",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw841225a6/images/hi-res/50D2BIVSV1A02.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1e0dbe5b/images/hi-res/50D2BIVSV1A02_1.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwfb4615df/images/hi-res/50D2BIVSV1A02_2.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Bangle",
+        "name":"Fashionable Diamond Bangle",
+        "desc":"Accentuate your Modern Wear with this Delicate Diamond Bangle Crafted in 18 Karat Yellow and White Gold which elevate your style. Stone clarity SI2",
+        "offerPrice": "₹ 85,887",
+        "discountPrice":"₹ 93,433",
+        "category":"Bangle",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw65fd7088/images/hi-res/50D1D1VEM1S02_1.jpg?sw=633&sh=633",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw65fd7088/images/hi-res/50D1D1VEM1S02_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw7f8cf2d5/images/hi-res/50D1D1VEM1S02_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3cce628a/images/hi-res/50D1D1VEM1S02_3.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Bangle",
+        "name":"Little Queen Diamond Bangle",
+        "desc":"Channel your inner queen when you adorn this crown pattern bangle crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+        "offerPrice": "₹ 73,222",
+        "discountPrice":"₹ 86,144",
+        "category":"Bangle",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw21d0a05a/images/hi-res/504045VCM1A02.jpg?sw=633&sh=633",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw21d0a05a/images/hi-res/504045VCM1A02.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb21bd9ae/images/hi-res/504045VCM1A02_1.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3bc1028e/images/hi-res/504045VCM1A02_2.jpg?sw=115&sh=115"
+    },
+
+
+    //new arrival
+
+    {
+        "title":"Chain",
+        "name":"Whimsical Pearl Pendant with Chain",
+        "desc":"Capture hearts with this 18 Karat yellow gold Pendant with Chain, featuring a playful heart design gently holding a precious pearl.",
+        "offerPrice": "₹ 15,902",
+        "discountPrice":"₹",
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3759716d/images/hi-res/50D4I1GMDAAPL_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3759716d/images/hi-res/50D4I1GMDAAPL_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw87027353/images/hi-res/50D4I1GMDAAPL_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2c11a52f/images/hi-res/50D4I1GMDAAPL_3.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Chain",
+        "name":"Celestial Pearl Pendant with Chain",
+        "desc":"Embrace classic sophistication with this 18 Karat yellow gold Pendant with Chain, graced by a single luminous pearl in a crescent embrace.",
+        "offerPrice": "₹ 17,677",
+        "discountPrice":"₹",
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3759716d/images/hi-res/50D4I1GMDAAPL_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw3759716d/images/hi-res/50D4I1GMDAAPL_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw87027353/images/hi-res/50D4I1GMDAAPL_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2c11a52f/images/hi-res/50D4I1GMDAAPL_3.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Chain",
+        "name":"Poise Pearl Pendant with Chain",
+        "desc":"A modern take on classic elegance, this 18 Karat rose gold Pendant with Chain showcases a pearl within a sleek geometric frame and a thin chain.",
+        "offerPrice": "₹ 18,986",
+        "discountPrice":"₹",
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw677cfeee/images/hi-res/50D4I1GGZAAPL_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw677cfeee/images/hi-res/50D4I1GGZAAPL_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd262ea47/images/hi-res/50D4I1GGZAAPL_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw02ada3ef/images/hi-res/50D4I1GGZAAPL_3.jpg?sw=115&sh=115"
+    },
+
+    {
+        "title":"Chain",
+        "name":"Crescent Pearl Pendant with Chain",
+        "desc":"Experience the soft caress of elegance with this 18 Karat rose gold Pendant with Chain, a pearl nestled in a crescent embrace, radiating simplicity.",
+        "offerPrice": "₹ 19,958",
+        "discountPrice":"₹",
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd8154efe/images/hi-res/50D4I1GGWAAPL_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd8154efe/images/hi-res/50D4I1GGWAAPL_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwbc84dd32/images/hi-res/50D4I1GGWAAPL_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwf69383be/images/hi-res/50D4I1GGWAAPL_3.jpg?sw=115&sh=115"
+    },
+    {
+        "title":"Chain",
+        "name":"Harmonious Pearl Stud Earrings",
+        "desc":"Discover timeless allure with this 18 Karat rose gold Stud Earrings, each a pearl nestled within an elegant crescent frame.",
+        "offerPrice": "₹ 18,580",
+        "discountPrice":"₹",
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9c009376/images/hi-res/50D4I1SGWADAPL_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9c009376/images/hi-res/50D4I1SGWADAPL_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw77b67a5b/images/hi-res/50D4I1SGWADAPL_2.jpg?sw=115&sh=115",
         "url3":""
     },
 
     {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
+        "title":"Chain",
+        "name":"Eternal Gold Pendant With Chain",
+        "desc":"Embrace the limitless essence of love with this intricately crafted heart-shaped Pendant with Chain in 22 Karat yellow gold.",
+        "offerPrice": "₹ 47,462",
         "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1368a1e2/images/hi-res/51D4FFGAFAA00_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1368a1e2/images/hi-res/51D4FFGAFAA00_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwf072a1cf/images/hi-res/51D4FFGAFAA00_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw21fd32b0/images/hi-res/51D4FFGAFAA00_3.jpg?sw=115&sh=115"
     },
     {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
+        "title":"Chain",
+        "name":"Elegant Link Diamond Hoop Earrings",
+        "desc":"A classic link pattern forms these elegant hoop earrings, crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+        "offerPrice": "₹ 47,462",
         "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
-
-    {
-        "title":"",
-        "name":"",
-        "desc":"",
-        "offerPrice": "₹",
-        "discountPrice":"₹",
-        "category":"",
-        "url":"",
-        "url1":"",
-        "url2":"",
-        "url3":""
-    },
+        "category":"newArrival",
+        "url":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9bfd3747/images/hi-res/50D3B3HURAAA02_1.jpg?sw=640&sh=640",
+        "url1":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw9bfd3747/images/hi-res/50D3B3HURAAA02_1.jpg?sw=115&sh=115",
+        "url2":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1338514a/images/hi-res/50D3B3HURAAA02_2.jpg?sw=115&sh=115",
+        "url3":"https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2d5e416a/images/hi-res/50D3B3HURAAA02_3.jpg?sw=115&sh=115"
+    }
 ]

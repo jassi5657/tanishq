@@ -22,7 +22,7 @@ const Collections = () => {
       
 
 <Grid container spacing={2}>
-  <Grid item xs={6} md={8} style={{display:"flex"}}>
+  <Grid item xs={6} md={8} style={{display:"flex", marginLeft:"60px"}}>
     {
       earringData.slice(12,15).map((earringData,i)=>(
 

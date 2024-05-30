@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { FaExchangeAlt, FaLessThan, FaPen, FaRegStar } from "react-icons/fa";
 import { FaGreaterThan } from "react-icons/fa";
@@ -12,7 +12,56 @@ import { IoDiamondOutline } from "react-icons/io5";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { TiMessages } from "react-icons/ti";
 import ImgSlider from '../ImgSlider';
-const Product = () => {
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import { useStateValue } from '../../StateProvider';
+const Product = ({ url, name, offerPrice }) => {
+  const [{ basket }, dispatch] = useStateValue();
+  console.log("basket >>>>", basket);
+  const addToBasket = (e) => {
+    e.preventDefault();
+
+    const item = {
+      id: product.id,
+      name: product.name,
+      offerPrice: product.offerPrice,
+      url: product.url,
+      quantity: 1,
+    };
+
+    const existingItems = JSON.parse(localStorage.getItem('basket')) || [];
+    const newItems = [...existingItems, item];
+    localStorage.setItem('basket', JSON.stringify(newItems));
+
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item,
+    });
+  };
+
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const response = await axios.get(`http://localhost:4000/product/${id}`);
+        setProduct(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
+
+
+  
+
   return (
     <Container>
       <p className='head'>Home | Product |<span> Riona Pearl Stud Earrings</span></p>
@@ -24,23 +73,24 @@ const Product = () => {
         <br />
         <Col1>
 
-          <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwcda0d985/images/hi-res/500104SQAABAPL_3.jpg?sw=115&sh=115" alt="" />
-          <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwcda0d985/images/hi-res/500104SQAABAPL_3.jpg?sw=115&sh=115" alt="" />
-          <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwcda0d985/images/hi-res/500104SQAABAPL_3.jpg?sw=115&sh=115" alt="" />
+          <img src={product.url1} alt="" />
+          <img src={product.url2} alt="" />
+          <img src={product.url3} alt="" />
+
 
 
         </Col1>
 
         <Col2>
           <FaLessThan className='less' />
-          <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw84238407/images/hi-res/50D2I2DWDAAA09_1.jpg?sw=640&sh=640" alt="" />
+          <img src={product.url} alt="" />
           <FaGreaterThan className='great' />
         </Col2>
 
         <Col3>
           <CiHeart className='heart' />
           <CiShare2 className='share' />
-          <p>Cascading Linear Diamond Drop Earrings</p>
+          <p>{product.name}</p>
           <div className="star">
             <div className="star-star">
 
@@ -54,10 +104,10 @@ const Product = () => {
           </div>
           <hr />
           <Content>
-            <p>Stand out of the crowd with these sleek, cascading drop earrings crafted in 18 karat yellow gold, studded with diamonds. Stone Clarity: I1/I2</p>
+            <p>{product.desc}</p>
           </Content>
 
-          <Price><p>Price <span>₹29 037</span></p></Price>
+          <Price><p>Price <span>{product.offerPrice}</span></p></Price>
           <PriceInfo><p>Price Inclusive of all taxes. See full <span> Price Breakup </span></p></PriceInfo>
 
           <Size>
@@ -98,7 +148,7 @@ const Product = () => {
 
 
           <Button>
-            <button>Add To Cart</button>
+            <button onClick={(e)=>addToBasket(e,product)}>Add To Cart</button>
             <button style={{ backgroundColor: "rgb(131,39,41)", color: "white", border: "none" }}>Buy Now</button>
           </Button>
           <hr />

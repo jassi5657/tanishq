@@ -2,6 +2,9 @@ const express = require('express');
 const db = require( 'mongoose' )
 const app = express()
 const port = 4000
+const bcrypt = require("bcrypt");
+
+
 
 const cors = require('cors')
 
@@ -10,6 +13,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const connectDB = require('./db/conn');
 const Product = require('./models/product');
+const User = require('./models/user');
 require("./db/conn")
 
 
@@ -24,6 +28,37 @@ app.get('/' , (req,res)=>{
 })
 
 app.use("/product", require('./routes/product.route'))
+app.use("/user", require('./routes/user.routes'))
+app.use("/cart", require('./routes/cart.router'))
+
+
+
+// app.post("/auth/signup", async (req, res) => {
+//     const { username, email, password, phone, city, zip } = req.body;
+
+//   const checkingUser = await User.findOne({ email: email });
+
+//   if (checkingUser) {
+//     return res.send("user already exist");
+//   }
+
+//   const saltround = await bcrypt.genSalt(10);
+//   const hashed = await bcrypt.hash(password, saltround);
+//   const user = await User.create({
+//     username,
+//     email,
+//     phone,
+//     password: hashed,
+//     city,
+//     zip,
+//     role: "seller",
+//   });
+//   res.send("user added success");
+//   console.log(user);
+//   });
+
+
+
 
 // app.get('/product', (req,res)=>{
 //     Product.find()

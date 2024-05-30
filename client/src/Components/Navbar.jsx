@@ -75,7 +75,7 @@ const Navbar = () => {
 
 const Container = styled.div`
 width: 100%;
-height: 50px;
+height: 60px;
 float: left;
 margin-left: 45px;
 font-size: 15px;
@@ -85,11 +85,17 @@ margin-top: 25px;
 const List = styled.div`
 
 ul{
+    width: 90%;
+    
+    /* background-color: red; */
     list-style-type: none;
     display: flex;
+    justify-content: space-evenly;
     gap: 0.5rem;
+    font-size: 16px;
+    /* font-size: 17px; */
     margin-left: -10px;
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 li{

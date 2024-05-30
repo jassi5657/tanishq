@@ -10,9 +10,13 @@ import { FaRegUser } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../StateProvider';
 
 const Header = () => {
     const [show,setShow] = useState(true);
+    const [{ basket }, dispatch] = useStateValue();
+    
+    
 
   return (
     <Container>
@@ -26,14 +30,14 @@ const Header = () => {
             
             <input type="text" placeholder='Search for Gold jewellery, Diamond jewellery and more...' />
 
-            <img src={cam}/>
+            <img src={cam} />
 
             <Icons>
-            <CiMicrophoneOn style={{marginLeft:"-54px"}}/>
+            <CiMicrophoneOn style={{marginLeft:"-34px", }}/>
             </Icons>
 
             <Icons>
-            <HiMagnifyingGlass style={{marginLeft:"15px"}}/>    
+            <HiMagnifyingGlass style={{marginLeft:"40px", }}/>    
             </Icons>
         </Search>
 
@@ -42,25 +46,30 @@ const Header = () => {
     <Title>Diamond</Title>
     </Others>
 
-    <Others style={{marginLeft:"90px"}}>
+    <Others style={{marginLeft:"110px"}}>
     <FaStoreAlt />
     <Title>Stores</Title>
         </Others>
 
-        <Others style={{marginLeft:"170px"}}>
+        <Others style={{marginLeft:"200px"}}>
+
+            <Link to="/login" style={{textDecoration:"none", color: "rgb(99,22,23)" }}>
     <FaRegUser />
     <Title>Account</Title>
+            </Link>
         </Others>
 
-        <Others style={{marginLeft:"250px"}}>
+        <Others style={{marginLeft:"300px"}}>
     <CiHeart />
     <Title>WishList</Title>
         </Others>
-
-        <Others style={{marginLeft:"340px"}}>
+<Link to="/cart">
+        <Others style={{marginLeft:"390px"}}>
     <IoCartOutline />
     <Title>Cart</Title>
+    <p className='length'>{basket?.length}</p>
         </Others>
+</Link>
 
         
         
@@ -75,7 +84,7 @@ const Container = styled.div`
 top: 0;
 margin-top: -22px;
 width: 100%;
-height: 95px;
+height: 100px;
 background-color: rgb(242,233,233);
 /* position: relative; */
 position: fixed;
@@ -98,25 +107,28 @@ img{
 const Search = styled.div`
 color: rgb(99,22,23);
 position: absolute;
-margin-top:37px;
+margin-top:40px;
 margin-left: 12.5%;
 input{
-    width: 696px;
-    height: 40px;
+    width: 756px;
+    height: 43px;
     border: none;
     border-radius: 5px;
 }
 
 ::placeholder{
     padding: 15px;
+    font-size: 16px;
+    /* align-items: center; */
+    margin-top: 6px;
 }
 
 
 img{
     width: 30px;
     height: 30px;
-    margin-left: -110px;
-    margin-top: 7px;
+    margin-left: -130px;
+    margin-top: 10px;
     position: absolute;
 }
 
@@ -135,17 +147,23 @@ margin-left: 640px;
 const Others = styled.div`
 color: rgb(99,22,23);
 left: 65%;
-font-size: 18px;
-font-weight: lighter;
-
+font-size: 22px;
+/* font-weight: lighter; */
+cursor: pointer;
 position: absolute;
-margin-top: 40px;
+margin-top: 37px;
 
+
+p{
+    margin-top: -55px;
+    margin-left: 40px;
+    font-size: 18px;
+}
 `;
 
 const Title = styled.div`
     margin-top: -5px;
-    font-size: 15px;
+    font-size: 18px;
 `;
 
 
