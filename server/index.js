@@ -30,6 +30,8 @@ app.get('/' , (req,res)=>{
 app.use("/product", require('./routes/product.route'))
 app.use("/user", require('./routes/user.routes'))
 app.use("/cart", require('./routes/cart.router'))
+app.use("/order", require('./routes/order.routes'))
+
 
 
 

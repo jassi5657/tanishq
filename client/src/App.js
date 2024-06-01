@@ -17,6 +17,8 @@ import Login from './Components/Auth/Login';
 import Register from './Components/Auth/Register';
 import { useState } from 'react';
 import AdminProducs from './Components/admin/AdminProducs';
+import Address from './Components/Address';
+import Orders from './Components/Orders';
 
 
 function App() {
@@ -44,6 +46,10 @@ function App() {
         <Route path='/admin' element={<Dashboard/>}></Route>
         <Route path='/admin/addProducts' element={<AddProducts/>}></Route>
         <Route path='/admin/products' element={<AdminProducs/>}></Route>
+        <Route path='/address' element={<Address/>}></Route>
+        <Route path='/orders' element={<Orders/>}></Route>
+
+
 
 
 

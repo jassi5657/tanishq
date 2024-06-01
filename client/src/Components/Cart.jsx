@@ -438,6 +438,12 @@ const Cart = () => {
   console.log("checkout >>>>>", basket);
   return (
     <Container>
+        <br />
+        <br />
+        <br />
+        <br />
+
+
     <div className="top">
         
         <div className="info">
@@ -550,7 +556,7 @@ const Cart = () => {
 </div>
 <div className="total">
     <h1 style={{marginTop:"30px"}}>Total ({basket.length} Item) : ₹ 15953 </h1>
-    <button>Proceed to Checkout</button>
+    <button onClick={() => navigate("/address")}>Proceed to Checkout</button>
 </div>
 </div>
 
@@ -576,6 +582,8 @@ const Cart = () => {
 }
 
 const Container = styled.div`
+margin-top: 60px;
+
 
 .info{
     display: inline-flex;

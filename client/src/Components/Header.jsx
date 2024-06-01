@@ -14,8 +14,7 @@ import { useStateValue } from '../StateProvider';
 
 const Header = () => {
     const [show,setShow] = useState(true);
-    const [{ basket }, dispatch] = useStateValue();
-    
+    const [{ basket, user }, dispatch] = useStateValue();
     
 
   return (
@@ -51,13 +50,35 @@ const Header = () => {
     <Title>Stores</Title>
         </Others>
 
-        <Others style={{marginLeft:"200px"}}>
+        {/* <Others style={{marginLeft:"200px"}}>
 
             <Link to="/login" style={{textDecoration:"none", color: "rgb(99,22,23)" }}>
     <FaRegUser />
+    <Title>{user?.username || "Guest"}</Title>
     <Title>Account</Title>
             </Link>
-        </Others>
+        </Others> */}
+
+{user ? (
+                <Others style={{marginLeft:"210px"}}>
+                    {/*  <FaRegUser /> */}
+                    <Title>{user.username}</Title>
+                    <select>
+                        <option>Orders</option>
+                        <option>Orders</option>
+
+                    </select>
+                </Others>
+            ):
+            <Others style={{marginLeft:"210px"}}>
+                            <Link to="/login" style={{textDecoration:"none", color: "rgb(99,22,23)" }}>
+
+
+                    <FaRegUser />
+                    <Title>Account</Title>
+                            </Link>
+                </Others>
+        }
 
         <Others style={{marginLeft:"300px"}}>
     <CiHeart />
