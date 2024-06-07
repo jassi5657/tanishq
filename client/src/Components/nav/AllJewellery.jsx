@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { FaLessThan } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const AllJewellery = () => {
 
@@ -16,23 +17,23 @@ const AllJewellery = () => {
 
         <div className="col-1">
         <h1>Category</h1>
-        <a href="">ALL JEWELLERY</a>
-        <a href="">EARRINGS</a>
-        <a href="">PENDANTS</a>
-        <a href="">FINGER RINGS</a>
-        <a href="">MANGALSUTRA</a>
-        <a href="">CHAINS</a>
-        <a href="">NOSE PIN</a>
-        <a href="">NECKLACES</a>
-        <a href="">NECKLACE SET</a>
+        <Link>ALL JEWELLERY</Link>
+        <Link>EARRINGS</Link>
+        <Link>PENDANTS</Link>
+        <Link>FINGER RINGS</Link>
+        <Link>MANGALSUTRA</Link>
+        <Link>CHAINS</Link>
+        <Link>NOSE PIN</Link>
+        <Link>NECKLACES</Link>
+        <Link>NECKLACE SET</Link>
 
         </div>
 
         <div className="col-2" style={{marginLeft:"10px"}}>
-        <a href="">BANGLES</a>
-        <a href="">BRACELETS</a>
-        <a href="">PENDANTS & EARRING SET</a>
-        <a href="">GOLD COINS</a>
+        <Link>BANGLES</Link>
+        <Link>BRACELETS</Link>
+        <Link>PENDANTS & EARRING SET</Link>
+        <Link>GOLD COINS</Link>
         <h1>GIFT CARD</h1>
         </div>
 
@@ -41,10 +42,10 @@ const AllJewellery = () => {
 
         <div className="col-3" style={{marginLeft:"10px"}}>
           <h1>GENDER</h1>
-        <a href="">WOMEN'S JEWELLERY</a>
-        <a href="">MEN</a>
-        <a href="">KIDS & TEENS</a>
-        <a href=""></a>
+        <Link>WOMEN'S JEWELLERY</Link>
+        <Link>MEN</Link>
+        <Link>KIDS & TEENS</Link>
+        <Link></Link>
         <h1> </h1>
         </div>
 
@@ -52,10 +53,10 @@ const AllJewellery = () => {
 
         <div className="col-4">
         <h1>PRICE BAND</h1>
-        <a href=""><FaLessThan/>25K</a>
-        <a href="">25K-50K</a>
-        <a href="">  50K-1L</a>
-        <a href="">1L & ABOVE</a>
+        <Link><FaLessThan/>25K</Link>
+        <Link>25K-50K</Link>
+        <Link>  50K-1L</Link>
+        <Link>1L & ABOVE</Link>
         <h1> </h1>
         </div>
 

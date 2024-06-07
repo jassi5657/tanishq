@@ -5,40 +5,61 @@ import { TbMathGreater } from 'react-icons/tb';
 import axios from "axios"
 import { NavLink } from 'react-router-dom';
 import { categoryProduct } from './Data/categoryProduct';
+import Earrings from './category/Earrings';
+import Coin from './category/Coin';
+import Rings from './category/Rings';
+import Pendant from './category/Pendant';
+import Bangle from './category/Bangle';
+import Chains from './category/Chains';
 const Cat = () => {
-const [products,setProducts] = useState([])
+    const [products, setProducts] = useState([])
 
-useEffect(()=>{
-    axios.get('http://localhost:4000/product')
-    .then(products => setProducts(products.data))
-    .catch(err => console.log(err) )
-},[])
+    useEffect(() => {
+        axios.get('http://localhost:4000/product')
+            .then(products => setProducts(products.data))
+            .catch(err => console.log(err))
+    }, [])
 
-    
+
     return (
         <Container>
 
 
-            <div className="card">
-                {
-                    categoryProduct.map((products, i) => (
-                        
-                        
-                        <div className="cards">
-
-                            <img src={products.img} alt="" />
-
-                            <h1>{products.title}</h1>
+            {/* <div className="card"> */}
 
 
-                            <a href="">Explore</a>
-            <p><TbMathGreater className='greater'/></p>
+                {/* <div className="cards"> */}
+                <div className="row">
 
-                        </div>
 
-                    ))
-                }
-            </div>
+                <Earrings />
+                <Coin />
+                <Rings />
+                <Pendant />
+                <Bangle />
+
+                <Chains />
+                </div>
+                <div className="col">
+                <Earrings />
+                <Earrings />
+                <Earrings />
+                <Earrings />
+                <Earrings />
+                <Earrings />
+
+                
+
+                </div>
+
+
+
+                {/* <a href="">Explore</a>
+            <p><TbMathGreater className='greater'/></p> */}
+
+                {/* </div> */}
+
+            {/* </div> */}
         </Container>
     )
 }
@@ -47,20 +68,33 @@ useEffect(()=>{
 
 const Container = styled.div`
 width: 90%;
-margin-top: 30px;
-margin-left: 70px;
+margin-top: 10px;
+margin-left: 100px;
     /* margin-top: -20px; */
+
+    .row{
+        display: flex;
+        /* margin: 10px; */
+        /* gap: 15px; */
+        width: 100%;
+        /* background-color: red; */
+        /* overflow: scroll; */
+        
+    }
+
+    .col{
+        /* margin-left: -100px;  */
+         display: flex;
+        /* gap: 15px; */
+
+    }
 
 .cards{
     display: inline-flex;
     border: 1px solid lightgray;
     width: 178px;
-    
-    
     margin: 15px;
-height: 280px;
-
-
+    height: 280px;
 
 
     h1{
@@ -128,4 +162,6 @@ img{
 
 
 
+
 export default Cat
+

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { categoryProduct } from './Data/categoryProduct';
 import { TbMathGreater } from "react-icons/tb";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const AllProducts = () => {
   const [products,setProducts] = useState([])
@@ -18,7 +19,10 @@ useEffect(()=>{
               
               
               products.map((products,i)=>(
+                
+                
                 <div className="cards">
+                  {/* <Link to={`/product/${products._id}`} key={products._id}> */}
                     <img src={products.url} alt="" />
                     {/* <h1 className='head'> {products.name}</h1> */}
                     <h1 className='head'> {products.category}</h1>
@@ -26,7 +30,9 @@ useEffect(()=>{
                     
                     {/* <p className='price'>{products.price}</p> */}
                     <a href="">Check Delivery Date <span><TbMathGreater/></span></a>
+              {/* </Link> */}
               </div>
+
                 ))
             }
     </Container>

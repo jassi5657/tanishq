@@ -90,7 +90,10 @@ const Product = ({ url, name, offerPrice }) => {
         <Col3>
           <CiHeart className='heart' />
           <CiShare2 className='share' />
-          <p>{product.name}</p>
+          <br />
+          <br />
+
+          <p style={{marginLeft:"-30px"}}>{product.name}</p>
           <div className="star">
             <div className="star-star">
 
@@ -104,11 +107,11 @@ const Product = ({ url, name, offerPrice }) => {
           </div>
           <hr />
           <Content>
-            <p>{product.desc}</p>
+            <p style={{marginLeft:"55px"}}>{product.desc}</p>
           </Content>
 
-          <Price><p>Price <span>{product.offerPrice}</span></p></Price>
-          <PriceInfo><p>Price Inclusive of all taxes. See full <span> Price Breakup </span></p></PriceInfo>
+          <Price style={{marginLeft:"-50px"}}><p>Price <span>{product.offerPrice}</span></p></Price>
+          <PriceInfo style={{marginLeft:"-50px"}}><p>Price Inclusive of all taxes. See full <span> Price Breakup </span></p></PriceInfo>
 
           <Size>
 
@@ -142,12 +145,12 @@ const Product = ({ url, name, offerPrice }) => {
               <DiamondWeight><p>Diamond weight: 0.115 c</p></DiamondWeight>
             </Karat>
 
-            <Guides><p>Not sure what to buy? Check out our Buying Guides</p></Guides>
+            <Guides style={{marginLeft:"-60px"}}><p>Not sure what to buy? Check out our Buying Guides</p></Guides>
 
           </Purity>
 
 
-          <Button>
+          <Button style={{marginLeft:"-50px"}}>
             <button onClick={(e)=>addToBasket(e,product)}>Add To Cart</button>
             <button style={{ backgroundColor: "rgb(131,39,41)", color: "white", border: "none" }}>Buy Now</button>
           </Button>
@@ -198,7 +201,7 @@ const Product = ({ url, name, offerPrice }) => {
           </Guranted>
 
 
-          <Experttalk>
+          <Experttalk style={{marginLeft:"-60px"}}>
             <button>Talk To Expert</button>
           </Experttalk>
 
@@ -252,7 +255,7 @@ const Product = ({ url, name, offerPrice }) => {
       </Col4>
 
       <Col5>
-        <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwa020b578/images/hi-res/50D2I2DWDAAA09_2.jpg?sw=640&sh=640" alt="" />
+      <img src={product.url} style={{marginLeft:"810px"}} />
       </Col5>
 
 
@@ -347,7 +350,7 @@ const Product = ({ url, name, offerPrice }) => {
         </List>
 
 
-        <Image>
+        <Image >
           <img src="https://www.tanishq.co.in/on/demandware.static/-/Sites/default/dw05fc6be3/images/pdp/Promises_Banner_DesktopU.jpg" alt="" />
         </Image>
 
@@ -473,6 +476,7 @@ img{
 
 `;
 const Col3 = styled.div`
+
   position: absolute;
   width: 40%;
   margin-top: -500px;
@@ -786,6 +790,7 @@ const ProductDetails = styled.div`
 
   p{
     text-align: justify;
+    width: 700px;
   }
 `;
 const Specifications = styled.div`
@@ -808,7 +813,7 @@ img{
 width: 374px;
 height: 374px;
 margin-left: 810px;
-margin-top: -278px;
+margin-top: -318px;
 }
 `;
 
